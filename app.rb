@@ -11,6 +11,6 @@ class App < Sinatra::Base
   end
   
   post '/checkout' do 
-    @item = params["secret"]  
+    @item = params[:item]  
   end
 end
